@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="skyGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#3b0764" />
+      <stop offset="40%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#030712" />
+    </radialGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="mist" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#skyGrad)"/>
+
+  <!-- Celestial Giant Moon -->
+  <circle cx="500" cy="220" r="180" fill="url(#moonGlow)"/>
+  <circle cx="500" cy="220" r="110" fill="#e0f2fe" opacity="0.95"/>
+  <circle cx="470" cy="190" r="25" fill="#cbd5e1" opacity="0.3"/>
+  <circle cx="530" cy="240" r="35" fill="#cbd5e1" opacity="0.25"/>
+
+  <!-- Floating Island with Castle Silhouette -->
+  <g transform="translate(140, 180)">
+    <!-- Island Top Greenery -->
+    <ellipse cx="250" cy="180" rx="200" ry="35" fill="#064e3b"/>
+    <!-- Rocky Bottom Cone -->
+    <path d="M 50,180 Q 150,220 250,330 Q 350,220 450,180 Z" fill="#1e293b"/>
+    <!-- Hanging Roots / Vines -->
+    <path d="M 120,200 Q 130,260 110,310" stroke="#047857" stroke-width="4" fill="none"/>
+    <path d="M 230,280 Q 240,360 220,400" stroke="#047857" stroke-width="3" fill="none"/>
+    <path d="M 370,200 Q 360,270 380,320" stroke="#047857" stroke-width="4" fill="none"/>
+    
+    <!-- Waterfall falling from island into clouds -->
+    <path d="M 210,180 L 215,350 L 225,350 L 220,180 Z" fill="#38bdf8" opacity="0.75"/>
+
+    <!-- Fantasy Towers Silhouettes -->
+    <rect x="230" y="100" width="40" height="80" fill="#0f172a"/>
+    <polygon points="215,100 250,40 285,100" fill="#0f172a"/>
+    <rect x="170" y="130" width="30" height="50" fill="#0f172a"/>
+    <polygon points="160,130 185,85 210,130" fill="#0f172a"/>
+    <rect x="300" y="125" width="25" height="55" fill="#0f172a"/>
+    <polygon points="290,125 312,85 335,125" fill="#0f172a"/>
+  </g>
+
+  <!-- Glowing particles / Stars -->
+  <g fill="#ffffff">
+    <circle cx="80" cy="120" r="2"/>
+    <circle cx="210" cy="90" r="3"/>
+    <circle cx="340" cy="70" r="1.5"/>
+    <circle cx="680" cy="140" r="2.5"/>
+    <circle cx="730" cy="280" r="2"/>
+    <circle cx="120" cy="380" r="2"/>
+  </g>
+
+  <!-- Tag -->
+  <rect x="30" y="30" width="220" height="34" rx="17" fill="rgba(56,189,248,0.15)" stroke="rgba(56,189,248,0.4)" stroke-width="1"/>
+  <text x="140" y="52" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#38bdf8">PHOTOSHOP MANIPULATION</text>
+</svg>

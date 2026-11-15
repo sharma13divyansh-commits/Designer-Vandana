@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stationeryBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="mShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="8" dy="16" stdDeviation="16" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#stationeryBg)"/>
+
+  <!-- Letterhead Mockup -->
+  <g transform="translate(140, 70) rotate(-3)" filter="url(#mShadow)">
+    <rect width="320" height="440" rx="6" fill="#ffffff"/>
+    <!-- Letterhead Header -->
+    <path d="M 0,0 L 320,0 L 320,50 L 0,80 Z" fill="#0f172a"/>
+    <circle cx="45" cy="40" r="16" fill="#d4af37"/>
+    <text x="45" y="45" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="700" font-size="12" fill="#0f172a">DV</text>
+    <text x="75" y="44" font-family="'Poppins', sans-serif" font-weight="700" font-size="13" fill="#ffffff">DESIGNER VANDANA</text>
+    
+    <!-- Dummy Text Lines -->
+    <g fill="#cbd5e1">
+      <rect x="40" y="120" width="140" height="8" rx="4"/>
+      <rect x="40" y="145" width="240" height="6" rx="3"/>
+      <rect x="40" y="165" width="220" height="6" rx="3"/>
+      <rect x="40" y="185" width="235" height="6" rx="3"/>
+      <rect x="40" y="205" width="180" height="6" rx="3"/>
+
+      <rect x="40" y="245" width="240" height="6" rx="3"/>
+      <rect x="40" y="265" width="210" height="6" rx="3"/>
+      <rect x="40" y="285" width="230" height="6" rx="3"/>
+    </g>
+
+    <line x1="40" y1="380" x2="160" y2="380" stroke="#94a3b8" stroke-width="1"/>
+    <text x="40" y="400" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Authorized Signature</text>
+  </g>
+
+  <!-- Dark Hardcover Notebook -->
+  <g transform="translate(420, 140) rotate(5)" filter="url(#mShadow)">
+    <rect width="250" height="350" rx="10" fill="#09090b" stroke="#27272a" stroke-width="2"/>
+    <!-- Spine -->
+    <rect x="0" y="0" width="24" height="350" rx="4" fill="#18181b"/>
+    <!-- Gold Emboss Logo on Notebook -->
+    <circle cx="137" cy="150" r="35" fill="none" stroke="#d4af37" stroke-width="2"/>
+    <polygon points="137,120 162,165 112,165" fill="none" stroke="#d4af37" stroke-width="2"/>
+    <text x="137" y="220" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="600" font-size="14" fill="#d4af37" letter-spacing="3">SKETCHBOOK</text>
+    <text x="137" y="240" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#a1a1aa">STUDENT EDITION</text>
+  </g>
+
+  <!-- Tag -->
+  <rect x="30" y="30" width="200" height="34" rx="17" fill="rgba(212,175,55,0.15)" stroke="rgba(212,175,55,0.4)" stroke-width="1"/>
+  <text x="130" y="52" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#fde047">CORPORATE IDENTITY</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="msmeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="tricolor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff9933"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#138808"/>
+    </linearGradient>
+    <linearGradient id="blueRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <filter id="mShadow2" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Certificate Canvas -->
+  <rect width="600" height="420" rx="16" fill="url(#msmeBg)" filter="url(#mShadow2)" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Ornate Border -->
+  <rect x="18" y="18" width="564" height="384" rx="10" fill="none" stroke="#2563eb" stroke-width="3"/>
+  <rect x="25" y="25" width="550" height="370" rx="6" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Seal Emblem -->
+  <g transform="translate(100, 110)">
+    <circle cx="0" cy="0" r="48" fill="#dbeafe"/>
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#2563eb" stroke-width="3"/>
+    <circle cx="0" cy="0" r="36" fill="#1e3a8a"/>
+    <text x="0" y="-8" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="800" font-size="14" fill="#fbbf24">MSME</text>
+    <text x="0" y="8" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="700" font-size="9" fill="#ffffff">GOVT. OF INDIA</text>
+    <text x="0" y="20" text-anchor="middle" font-family="'Inter', sans-serif" font-size="7" fill="#93c5fd">REGISTERED</text>
+  </g>
+
+  <!-- Certificate Content -->
+  <text x="350" y="75" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="700" font-size="14" fill="#2563eb" letter-spacing="4">MINISTRY OF MSME RECOGNITION</text>
+  <text x="350" y="108" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="800" font-size="22" fill="#0f172a">MSME REGISTERED INSTITUTE</text>
+  <line x1="220" y1="125" x2="480" y2="125" stroke="#2563eb" stroke-width="2"/>
+
+  <text x="350" y="160" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" fill="#475569">Officially recognized and registered under MSME</text>
+  <text x="350" y="195" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="700" font-size="18" fill="#0f172a">Designer Vandana Learning Studio</text>
+  
+  <text x="350" y="228" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" fill="#475569">Government of India Enterprise Initiative for Vocational Education,</text>
+  <text x="350" y="248" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" fill="#475569">Graphic Designing, Video Editing &amp; Information Technology Training.</text>
+
+  <!-- Details Table Box -->
+  <rect x="180" y="270" width="340" height="45" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="200" y="297" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#0f172a">Enterprise Category</text>
+  <text x="440" y="297" font-family="'Inter', sans-serif" font-weight="700" font-size="10" fill="#2563eb">Registered Training Center</text>
+
+  <!-- Signatures Line -->
+  <line x1="180" y1="365" x2="300" y2="365" stroke="#94a3b8" stroke-width="1"/>
+  <text x="240" y="380" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Verification Authority</text>
+
+  <line x1="400" y1="365" x2="520" y2="365" stroke="#94a3b8" stroke-width="1"/>
+  <text x="460" y="380" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Authorized Signatory</text>
+</svg>

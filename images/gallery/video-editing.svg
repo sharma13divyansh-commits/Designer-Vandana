@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nleBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#0c0a09"/>
+
+  <!-- NLE Suite Window Mockup -->
+  <g transform="translate(40, 40)">
+    <rect width="720" height="520" rx="12" fill="url(#nleBg)" stroke="#27272a" stroke-width="2"/>
+    
+    <!-- Title bar -->
+    <rect width="720" height="35" rx="12" fill="#27272a"/>
+    <circle cx="20" cy="18" r="6" fill="#ef4444"/>
+    <circle cx="38" cy="18" r="6" fill="#f59e0b"/>
+    <circle cx="56" cy="18" r="6" fill="#10b981"/>
+    <text x="360" y="22" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" fill="#a1a1aa">Premiere Pro – Cinematic_Short_Final_ColorGrade.prproj</text>
+
+    <!-- Source / Program Monitor Split -->
+    <rect x="20" y="50" width="330" height="230" rx="6" fill="#000000" stroke="#3f3f46" stroke-width="1"/>
+    <!-- Simulated video clip preview 1 -->
+    <rect x="25" y="55" width="320" height="220" fill="#1e1b4b"/>
+    <path d="M 25,230 Q 185,130 345,210 L 345,275 L 25,275 Z" fill="#312e81"/>
+    <circle cx="185" cy="140" r="30" fill="#fbbf24"/>
+    <text x="185" y="260" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">SOURCE MONITOR [RAW LOG]</text>
+
+    <rect x="370" y="50" width="330" height="230" rx="6" fill="#000000" stroke="#3f3f46" stroke-width="1"/>
+    <!-- Simulated video clip preview 2 (Graded) -->
+    <rect x="375" y="55" width="320" height="220" fill="#042f2e"/>
+    <path d="M 375,230 Q 535,130 695,210 L 695,275 L 375,275 Z" fill="#115e59"/>
+    <circle cx="535" cy="140" r="30" fill="#f59e0b"/>
+    <text x="535" y="260" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#38bdf8">PROGRAM MONITOR [LUT APPLIED &amp; COLOR GRADED]</text>
+
+    <!-- Multi-track Timeline Area -->
+    <rect x="20" y="300" width="680" height="200" rx="6" fill="#18181b" stroke="#3f3f46" stroke-width="1"/>
+    
+    <!-- Timeline Ruler -->
+    <rect x="20" y="300" width="680" height="24" fill="#27272a"/>
+    <line x1="100" y1="315" x2="100" y2="324" stroke="#71717a"/>
+    <line x1="200" y1="315" x2="200" y2="324" stroke="#71717a"/>
+    <line x1="300" y1="315" x2="300" y2="324" stroke="#71717a"/>
+    <line x1="400" y1="315" x2="400" y2="324" stroke="#71717a"/>
+    <line x1="500" y1="315" x2="500" y2="324" stroke="#71717a"/>
+    <line x1="600" y1="315" x2="600" y2="324" stroke="#71717a"/>
+
+    <!-- Track Labels -->
+    <text x="35" y="348" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#60a5fa">V2</text>
+    <text x="35" y="388" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#60a5fa">V1</text>
+    <text x="35" y="430" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#34d399">A1</text>
+    <text x="35" y="470" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#34d399">A2</text>
+
+    <!-- Video Track 2 Clips (Titles & Effects) -->
+    <rect x="150" y="332" width="160" height="26" rx="4" fill="#6366f1"/>
+    <text x="160" y="349" font-family="'Inter', sans-serif" font-size="9" fill="#ffffff">LowerThird_Animation.aep</text>
+    <rect x="420" y="332" width="130" height="26" rx="4" fill="#ec4899"/>
+    <text x="430" y="349" font-family="'Inter', sans-serif" font-size="9" fill="#ffffff">Adjustment Layer [LUT]</text>
+
+    <!-- Video Track 1 Clips -->
+    <rect x="60" y="372" width="220" height="26" rx="4" fill="#3b82f6"/>
+    <text x="70" y="389" font-family="'Inter', sans-serif" font-size="9" fill="#ffffff">Drone_PaschimVihar_01.mp4</text>
+    <rect x="285" y="372" width="230" height="26" rx="4" fill="#2563eb"/>
+    <text x="295" y="389" font-family="'Inter', sans-serif" font-size="9" fill="#ffffff">Studio_Classroom_Interview.mp4</text>
+    <rect x="520" y="372" width="160" height="26" rx="4" fill="#1d4ed8"/>
+    <text x="530" y="389" font-family="'Inter', sans-serif" font-size="9" fill="#ffffff">B-Roll_GraphicDesign.mp4</text>
+
+    <!-- Audio Track 1 Clips (Dialog & SFX) -->
+    <rect x="60" y="415" width="455" height="26" rx="4" fill="#059669"/>
+    <path d="M 70,428 Q 80,418 90,428 T 110,428 T 130,428 T 150,428 T 170,428" stroke="#a7f3d0" fill="none" stroke-width="1.5"/>
+    <text x="180" y="432" font-family="'Inter', sans-serif" font-size="9" fill="#ffffff">Vocal_Voiceover_Mastered.wav</text>
+
+    <!-- Audio Track 2 (Background Music) -->
+    <rect x="60" y="455" width="620" height="26" rx="4" fill="#047857"/>
+    <text x="70" y="472" font-family="'Inter', sans-serif" font-size="9" fill="#a7f3d0">Cinematic_Uplifting_Beat_120bpm.mp3</text>
+
+    <!-- Red Playhead Needle -->
+    <line x1="380" y1="300" x2="380" y2="500" stroke="#ef4444" stroke-width="2"/>
+    <polygon points="374,300 386,300 380,312" fill="#ef4444"/>
+  </g>
+
+  <!-- Tag -->
+  <rect x="30" y="30" width="190" height="34" rx="17" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.4)" stroke-width="1"/>
+  <text x="125" y="52" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#f87171">VIDEO EDITING PROJECT</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pkgBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="goldLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+    <filter id="pBoxShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="10" dy="25" stdDeviation="20" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="#0f172a"/>
+
+  <!-- Botanical foliage background accents -->
+  <path d="M 50,550 Q 150,400 100,250 Q 80,180 50,150" fill="none" stroke="rgba(16,185,129,0.1)" stroke-width="60" stroke-linecap="round"/>
+  <path d="M 750,50 Q 650,200 700,350 Q 720,420 750,450" fill="none" stroke="rgba(16,185,129,0.1)" stroke-width="60" stroke-linecap="round"/>
+
+  <!-- 3D Packaging Box Isometric representation -->
+  <g transform="translate(180, 100)" filter="url(#pBoxShadow)">
+    <!-- Box Top Face -->
+    <polygon points="150,40 330,80 200,120 20,80" fill="#047857"/>
+    <!-- Box Left Face -->
+    <polygon points="20,80 200,120 200,380 20,340" fill="url(#pkgBg)"/>
+    <!-- Box Right Face -->
+    <polygon points="200,120 330,80 330,340 200,380" fill="#065f46"/>
+
+    <!-- Left Face Label Design -->
+    <g transform="translate(45, 150) skewY(12)">
+      <circle cx="65" cy="50" r="30" fill="none" stroke="url(#goldLeaf)" stroke-width="2"/>
+      <path d="M 65,30 Q 75,50 65,70 Q 55,50 65,30 Z" fill="url(#goldLeaf)"/>
+      <text x="65" y="105" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="700" font-size="14" fill="#ffffff" letter-spacing="2">MATCHA</text>
+      <text x="65" y="125" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" fill="#a7f3d0" letter-spacing="3">ORGANIC CEREMONIAL</text>
+      <line x1="25" y1="140" x2="105" y2="140" stroke="url(#goldLeaf)" stroke-width="1"/>
+      <text x="65" y="160" text-anchor="middle" font-family="'Inter', sans-serif" font-size="7" fill="#6ee7b7">NET WT. 100g / 3.5oz</text>
+    </g>
+  </g>
+
+  <!-- Pouch Beside Box -->
+  <g transform="translate(480, 180)" filter="url(#pBoxShadow)">
+    <!-- Standup Pouch shape -->
+    <path d="M 40,30 L 160,30 Q 180,100 170,260 Q 165,290 100,290 Q 35,290 30,260 Q 20,100 40,30 Z" fill="#0f766e" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+    <rect x="50" y="20" width="100" height="15" rx="3" fill="#115e59"/>
+    
+    <!-- Pouch Minimalist Label -->
+    <rect x="55" y="80" width="90" height="130" rx="8" fill="#ffffff"/>
+    <text x="100" y="115" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="700" font-size="11" fill="#0f172a">MATCHA</text>
+    <text x="100" y="130" text-anchor="middle" font-family="'Inter', sans-serif" font-size="6" fill="#059669">COLD PRESSED TEA</text>
+    <circle cx="100" cy="155" r="14" fill="#d1fae5"/>
+    <text x="100" y="160" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" fill="#059669">🍃</text>
+    <text x="100" y="195" text-anchor="middle" font-family="'Inter', sans-serif" font-size="6" fill="#94a3b8">ESTD 2026</text>
+  </g>
+
+  <!-- Tag -->
+  <rect x="30" y="30" width="170" height="34" rx="17" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+  <text x="115" y="52" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#34d399">PACKAGING DESIGN</text>
+</svg>
