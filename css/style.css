@@ -1784,6 +1784,84 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
+   10. FAQ SECTION (ON-PAGE SEO & USER CONVERSION)
+   ========================================================================== */
+.faq-section {
+  padding: 100px 0;
+  background: var(--white);
+}
+
+.faq-accordion {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  background: var(--gray-50);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.faq-item:hover {
+  border-color: var(--electric-blue);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-item.active {
+  background: var(--white);
+  border-color: var(--electric-blue);
+  box-shadow: var(--shadow-md);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 22px 26px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-navy);
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-icon {
+  font-size: 16px;
+  color: var(--electric-blue);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 26px;
+  color: var(--gray-600);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 250px;
+  padding: 0 26px 22px 26px;
+}
+
+/* ==========================================================================
    14. RESPONSIVE MEDIA QUERIES
    ========================================================================== */
 @media (max-width: 1024px) {
